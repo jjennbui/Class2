@@ -3,9 +3,58 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 17rem;
   min-height: 100vh;
+  font-family:monospace;
+  font-weight: bolder;
+  font-size: 15px;
+  
 }
+
+.main {
+  background: linear-gradient(45deg, rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0), rgba(1, 65, 255, 0.3));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.main button{
+  background-color: rgba(1, 65, 255, 0);
+  border-radius: 5px;
+  width: 100px;
+  height: 22px;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+     
+}
+
+
+.main button:hover{
+  color: white;
+  box-shadow: 0 5px 15px  rgba(1, 65, 255, 0.3);
+}
+
+.main input[type=text]{
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  box-shadow: 0 5px 7px  rgba(1, 65, 255, 0.3);
+}
+
 
 .description {
   display: inherit;
@@ -276,3 +325,19 @@
     transform: rotate(0deg);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
